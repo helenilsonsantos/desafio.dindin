@@ -40,17 +40,25 @@ header nav a {
 /* RESPONSIVIDADE DO MENU*/
 
 @media (max-width: 1000px) {
+    header {
+        height: 50px;
+    }
+
     #logo_cabecalho {
-        width: 10px;
-        margin-left: 5px;
+        margin-left: 10px;
+    }
+
+    #img_logo {
+        width: 80px;
     }
 
     #menu_opcoes {
-        margin-right: 5px;
+        margin-right: 10px;
     }
 
     header nav a {
         padding: 0px 5px;
+        font-size: 12px;
     }
 }
 
@@ -248,6 +256,8 @@ h4 {
     border-radius: 30px;
     padding: 5px 25px;
     cursor: pointer;
+    text-decoration: none;
+    color: #FF4081;
 
 }
 
@@ -308,6 +318,8 @@ footer {
 .rodape_opcoes {
     padding: 5px 0px;
     cursor: pointer;
+    color: #FFF;
+    text-decoration: none;
 }
 
 #outras_opcoes {
@@ -326,6 +338,10 @@ footer {
 /* RESPONSIVIDADE DO RODAPÉ*/
 
 @media (max-width: 1000px) {
+    footer {
+        height: 110px;
+    }
+
     footer img {
         width: 120px;
     }
@@ -333,9 +349,13 @@ footer {
     #logo_rodape {
         margin-left: 10px;
     }
+
+    #img_rodape {
+        width: 80px;
+    }
     
     .rodape_opcoes, .outras_opcoes {
-        font-size: 13px;
+        font-size: 12px;
     }
 
     #rodape_outras_opcoes {
@@ -344,7 +364,7 @@ footer {
      }
 
     .outras_opcoes {
-        padding: 5px;
+        padding: 2px;
         width: 100px;
     }
 }

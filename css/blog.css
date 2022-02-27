@@ -43,32 +43,43 @@ header nav a {
     header {
         height: 50px;
     }
+
     #logo_cabecalho {
         margin-left: 10px;
     }
+
     #img_logo {
         width: 80px;
     }
 
     #menu_opcoes {
         margin-right: 10px;
-        font-size: 12px;
     }
 
     header nav a {
         padding: 0px 5px;
+        font-size: 12px;
     }
 }
 
-#introducao {
-    padding: 10px 50px;
-    margin: auto;
+section {
     max-width: 1500px;
+    margin: 100px auto;
+}
+
+#introducao {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#lado_esquerdo {
+    width: 50%;
 }
 
 h1 {
-    color: #FF4081;
-    font-size: 50px;
+    color: #009688;
+    font-size: 40px;
 }
 
 h2 {
@@ -77,108 +88,100 @@ h2 {
     margin: 10px 0px;
 }
 
+p {
+    margin: 25px 0px;
+}
+
 /*RESPONSIVIDADE DA INTRODUÇÃO*/
 
 @media (max-width: 1000px) {
-
-    h1 {
-        font-size: 30px;
-        margin-left: -40px;
-    }
-
-    h2 {
-        font-size: 20px;
-    }
-}
-
-/* ESTILIZAÇÃO DA SESSÃO CONTATO*/
-
-.formulario {
-    padding: 10px 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 10px auto;
-    max-width: 1500px;
-    height:calc(100vh - 332px);
-}
-
-#formulario {
-    margin-bottom: 30px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 50%;
-}
-
-input {
-    width: calc(100% - 10px);
-    height: 30px;
-    margin: 10px 0px;
-    padding-left: 10px;
-    border-radius: 7px;
-    border: #686868 solid 1px;
-    outline: none;
-}
-
-textarea {
-    height: 180px;
-    margin: 10px 0px;
-    padding: 10px;
-    border-radius: 7px;
-    border: #686868 solid 1px;
-    outline: none;
-}
-
-input, textarea {
-    font-family: 'Ubuntu';
-    color: #686868;
-}
-
-input:hover, textarea:hover {
-    box-shadow: 1px 1px 5px #686868;
-}
-
-
-.img {
-    display: flex;
-    width: 50%;
-    justify-content: center;
-    align-items: center;
-}
-
-#enviar {
-    background-color: #FF4081;
-    text-decoration: none;
-    padding: 10px 25px;
-    border-radius: 30px;
-    color: #FFF;
-    width: 50px;
-    cursor: pointer;
-}
-
-/* RESPONSIVIDADE DA SESSÃO CONTATO */
-
-@media (max-width: 1000px) {
-    .formulario {
-        width: calc(100% - 20px);
-        padding: 10px;
+    #introducao {
         display: block;
-        margin-bottom: 50px;
+        padding: 10px;
     }
 
-    #formulario {
+    #lado_esquerdo {
         width: 100%;
     }
 
-    .img {
+    #lado_direito {
         display: none;
     }
 
-    #enviar {
-        margin-bottom: 20px;
+    h1 {
+        font-size: 20px;
     }
 
+    p {
+        margin: 15px 0px;
+        width: 100%;
+        text-align: justify;
+    }
+
+    section {
+        margin: 20px 0px;
+    }
+}
+
+#materias{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin: 100px auto;
+    max-width: 1500px;
+    align-items: baseline;
+}
+
+.materias {
+    display: block;
+    width: 700px;
+}
+
+#retangulo {
+    width: 700px;
+    height: 359px;
+    background-color: #C4C4C4;
+}
+
+.post {
+    text-decoration: none;
+    color: #FF4081;
+    cursor: pointer;
+}
+
+.titulo {
+    max-width: 1500px;
+    margin: 100px auto auto;
+}
+
+h3 {
+    color: #009688;
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+/* RESPONSIVIDADE DAS METERIAIS */
+
+@media (max-width: 1000px) {
+    #materias {
+        width: calc(100% - 20px);
+        font-size: 12px;
+        margin-top: 0px;
+        padding-bottom: 10px;
+        display: flex;
+    }
+
+    #retangulo {
+        width: 100%;
+        height: 200px;
+    }
+}
+
+
+h4 {
+    color: #009688;
+    margin-top: 15px;
+    margin-bottom: -20px;
 }
 
 footer {
@@ -215,8 +218,8 @@ footer {
 .rodape_opcoes {
     padding: 5px 0px;
     cursor: pointer;
-    text-decoration: none;
     color: #FFF;
+    text-decoration: none;
 }
 
 #outras_opcoes {
@@ -238,12 +241,15 @@ footer {
     footer {
         height: 110px;
     }
+
     footer img {
         width: 120px;
     }
+
     #logo_rodape {
         margin-left: 10px;
     }
+
     #img_rodape {
         width: 80px;
     }
