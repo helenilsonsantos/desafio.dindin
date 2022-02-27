@@ -40,16 +40,16 @@ header nav a {
 
 @media (max-width: 1000px) {
     #logo_cabecalho {
-        width: 90px;
-        margin-left: 10px;
+        width: 10px;
+        margin-left: 5px;
     }
 
     #menu_opcoes {
-        margin-right: 10px;
+        margin-right: 5px;
     }
 
     header nav a {
-        padding: 0px 10px;
+        padding: 0px 5px;
     }
 }
 
@@ -143,10 +143,9 @@ h3 {
 @media (max-width: 1000px) {
     #investimentos_poupando_independencia {
         font-size: 13px;
-        margin-top: 30px;
+        margin-top: -50px;
         padding-bottom: 30px;
         overflow-x: scroll;
-        height: 500px;
         display: flex;
         justify-content: flex-start;
         align-items: flex-end;
@@ -183,16 +182,6 @@ h3 {
 
 .depoimentos {
     width: 570px;
-}
-
-/* RESPONSIVIDADE DE FALAM SOBRE*/
-@media (max-width: 1000px) {
-    .titulo {
-        margin: 20px auto auto;
-    }
-}
-
-.depoimentos {
     display: flex;
     align-items: center;
     padding: 10px 50px;
@@ -200,6 +189,30 @@ h3 {
 
 img {
     margin-right: 20px;
+}
+
+/* RESPONSIVIDADE DE FALAM SOBRE*/
+@media (max-width: 1000px) {
+    #falam_sobre {
+        margin: 10px 5px 110px 5px;
+    }
+
+    .titulo {
+        margin: 20px auto auto;
+        text-align: center;
+    }
+
+    h3 {
+        margin-left: 10px;
+        margin-top: -100px;
+    }
+
+    .depoimentos {
+        display: flex;
+        align-items: center;
+        padding: 10px 5px;
+    }
+    
 }
 
 #mais_conteudo {
@@ -225,6 +238,18 @@ h4 {
     margin-bottom: -20px;
 }
 
+#todos_posts {
+    display: block;
+    margin: 10px auto;
+    width: 150px;
+    text-align: center;
+    border: #FF4081 solid 1px;
+    border-radius: 30px;
+    padding: 5px 25px;
+    cursor: pointer;
+
+}
+
 /* RESPONSIVIDADE DO MAIS CONTÉUDO*/
 
 @media (max-width: 1000px) {
@@ -241,6 +266,10 @@ h4 {
     #mais_conteudo::-webkit-scrollbar-thumb {
         background-color: #009688;
         border-radius: 20px;
+    }
+
+    .conteudo {
+        padding: 10px 10px;
     }
 }
 
@@ -288,7 +317,7 @@ footer {
 
 .outras_opcoes {
     padding: 5px 25px;
-    border-radius: 25pc;
+    border-radius: 25px;
     border: #FFF solid 1px;
     cursor: pointer;
 }
@@ -299,9 +328,23 @@ footer {
     footer img {
         width: 120px;
     }
+
+    #logo_rodape {
+        margin-left: 10px;
+    }
     
     .rodape_opcoes, .outras_opcoes {
         font-size: 13px;
+    }
+
+    #rodape_outras_opcoes {
+        margin-right: 10px;
+        text-align: center;
+     }
+
+    .outras_opcoes {
+        padding: 5px;
+        width: 100px;
     }
 }
 
