@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Ubuntu', sans-serif;
 }
 
 header {
@@ -15,6 +14,7 @@ header {
 header nav a {
     color: #FFF;
     padding: 0px 15px;
+    cursor: pointer;
 }
 
 #cabecalho {
@@ -35,6 +35,25 @@ header nav a {
     justify-items: flex-end;
     margin-right: 30px;
 }
+
+/* RESPONSIVIDADE DO MENU*/
+
+@media (max-width: 1000px) {
+    #logo_cabecalho {
+        width: 90px;
+        margin-left: 10px;
+    }
+
+    #menu_opcoes {
+        margin-right: 10px;
+    }
+
+    header nav a {
+        padding: 0px 10px;
+    }
+}
+
+
 
 section {
     max-width: 1500px;
@@ -69,10 +88,32 @@ p {
     cursor: pointer;
 }
 
+/*RESPONSIVIDADE DA INTRODUÇÃO*/
+
+@media (max-width: 1000px) {
+    #introducao {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #lado_direito {
+        display: none;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        margin: 15px 0px;
+    }
+}
+
 #investimentos_poupando_independencia {
     display: flex;
     gap: 30px;
-    margin: 100px auto;
+    margin: 200px auto;
     max-width: 1500px;
     justify-content: space-evenly;
     align-items: baseline;
@@ -97,10 +138,58 @@ h3 {
     margin-left: 50px;
 }
 
+/* RESPONSIVIDADE DO INVESTIMENTOS | POUPANÇA | INDEPENDENCIA*/
+
+@media (max-width: 1000px) {
+    #investimentos_poupando_independencia {
+        font-size: 13px;
+        margin-top: 30px;
+        padding-bottom: 30px;
+        overflow-x: scroll;
+        height: 500px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        padding: 0px 10px;
+    }
+
+    #investimentos, #poupando, #independencia{
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+
+    #independencia {
+        width: 400px;
+    }
+
+    #investimentos_poupando_independencia::-webkit-scrollbar {
+        background-color: #FFF;
+        height: 10px;
+    }
+
+    #investimentos_poupando_independencia::-webkit-scrollbar-thumb {
+        background-color: #009688;
+        border-radius: 20px;
+    }
+}
+
 #falam_sobre {
     display: flex;
-    margin: 100px auto;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 10px auto;
     max-width: 1500px;
+}
+
+.depoimentos {
+    width: 570px;
+}
+
+/* RESPONSIVIDADE DE FALAM SOBRE*/
+@media (max-width: 1000px) {
+    .titulo {
+        margin: 20px auto auto;
+    }
 }
 
 .depoimentos {
@@ -136,6 +225,25 @@ h4 {
     margin-bottom: -20px;
 }
 
+/* RESPONSIVIDADE DO MAIS CONTÉUDO*/
+
+@media (max-width: 1000px) {
+    #mais_conteudo {
+        display: flex;
+        overflow-x: scroll;
+    }
+
+    #mais_conteudo::-webkit-scrollbar {
+    background-color: #FFF;
+    height: 10px;
+    }
+
+    #mais_conteudo::-webkit-scrollbar-thumb {
+        background-color: #009688;
+        border-radius: 20px;
+    }
+}
+
 footer {
     background-color: #419488;
     height: 150px;
@@ -169,6 +277,7 @@ footer {
 
 .rodape_opcoes {
     padding: 5px 0px;
+    cursor: pointer;
 }
 
 #outras_opcoes {
@@ -181,6 +290,25 @@ footer {
     padding: 5px 25px;
     border-radius: 25pc;
     border: #FFF solid 1px;
+    cursor: pointer;
 }
+
+/* RESPONSIVIDADE DO RODAPÉ*/
+
+@media (max-width: 1000px) {
+    footer img {
+        width: 120px;
+    }
+    
+    .rodape_opcoes, .outras_opcoes {
+        font-size: 13px;
+    }
+}
+
+
+
+
+
+
 
 
