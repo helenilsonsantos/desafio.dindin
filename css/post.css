@@ -81,6 +81,12 @@ h1 {
     margin: 30px auto;
 }
 
+h3 {
+    color: #009688;
+    font-size: 30px;
+    margin: 30px auto;
+}
+
 h5 {
     display: flex;
     justify-content: center;
@@ -105,18 +111,25 @@ p {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: calc(100% - 20px);
+        height: 350px;
+        margin: 50px 10px;
     }
 
-    #lado_direito {
-        display: none;
-    }
-
-    h2 {
-        font-size: 20px;
+    h1 {
+        font-size: 30px;
+        text-align: center;
     }
 
     p {
-        margin: 15px 0px;
+        margin: 15px 10px;
+        font-size: 12px;
+    }
+
+    h3 {
+        margin: 20px 10px;
+        line-height: 130%;
+        font-size: 25px;
     }
 }
 
@@ -128,12 +141,12 @@ article {
 }
 
 .investimento_poupando_independencia {
-    display: flex;
     gap: 30px;
-    margin: 200px auto;
+    margin: 50px auto;
     max-width: 1500px;
-    justify-content: space-evenly;
-    align-items: baseline;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .comecar_agora {
@@ -144,29 +157,17 @@ article {
     cursor: pointer;
 }
 
-.titulo {
-    max-width: 1500px;
-    margin: 100px auto auto;
-}
 
-h3 {
-    color: #009688;
-    font-size: 30px;
-    margin: 30px auto;
-}
-
-/* RESPONSIVIDADE DO INVESTIMENTOS | POUPANÇA | INDEPENDENCIA*/
+/* RESPONSIVIDADE DA SESSÃO NOSSSOS CURSOS*/
 
 @media (max-width: 1000px) {
-    #investimentos_poupando_independencia {
+    .investimento_poupando_independencia {
         font-size: 13px;
         margin-top: -50px;
-        padding-bottom: 30px;
         overflow-x: scroll;
         display: flex;
-        justify-content: flex-start;
         align-items: flex-end;
-        padding: 0px 10px;
+        padding: 15px 10px;
     }
 
     #investimentos, #poupando, #independencia{
@@ -178,34 +179,15 @@ h3 {
         width: 400px;
     }
 
-    #investimentos_poupando_independencia::-webkit-scrollbar {
+    .investimento_poupando_independencia::-webkit-scrollbar {
         background-color: #FFF;
         height: 10px;
     }
 
-    #investimentos_poupando_independencia::-webkit-scrollbar-thumb {
+    .investimento_poupando_independencia::-webkit-scrollbar-thumb {
         background-color: #009688;
         border-radius: 20px;
     }
-}
-
-#falam_sobre {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin: 10px auto;
-    max-width: 1500px;
-}
-
-.depoimentos {
-    width: 570px;
-    display: flex;
-    align-items: center;
-    padding: 10px 50px;
-}
-
-img {
-    margin-right: 20px;
 }
 
 /* RESPONSIVIDADE DE FALAM SOBRE*/
@@ -220,8 +202,7 @@ img {
     }
 
     h3 {
-        margin-left: 10px;
-        margin-top: -100px;
+        margin: 20px 10px;
     }
 
     .depoimentos {
