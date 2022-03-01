@@ -95,6 +95,14 @@ p {
     border-radius: 30px;
     padding: 5px 25px;
     cursor: pointer;
+    transition: 0.5;
+    color: white;
+}
+
+#saber_mais:hover {
+    background-color: white;
+    color: #FF4081;
+    border: white 12px solid;    
 }
 
 /*RESPONSIVIDADE DA INTRODUÇÃO*/
