@@ -130,15 +130,16 @@ p {
     margin: 100px auto;
     max-width: 1500px;
     align-items: baseline;
+    justify-content: center;
 }
 
 .materias {
     display: block;
-    width: 700px;
+    width: 630px;
 }
 
 #retangulo {
-    width: 700px;
+    width: 100%;
     height: 359px;
     background-color: #C4C4C4;
 }
